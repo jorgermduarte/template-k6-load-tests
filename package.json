@@ -1,0 +1,24 @@
+{
+  "name": "jk6-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "initialization.js",
+  "scripts": {
+    "bundle" : "webpack",
+    "start" : "k6 run __dist__/index.bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "faker": "^5.5.3",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "core-js": "^3.19.0",
+    "k6": "^0.0.0",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
