@@ -6,7 +6,7 @@ module.exports = {
     index: './src/start/initialization.js',
   },
   output: {
-    path: path.resolve(__dirname, '__dist__'),
+    path: path.resolve(__dirname, '__build__'),
     libraryTarget: 'commonjs',
     filename: '[name].bundle.js',
   },

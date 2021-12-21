@@ -1,12 +1,12 @@
-const module = {
+const modeleTests = {
   Login: require("./login.test"),
-  NodeImportExample: require("./faker.test"),
+  FakerExampleTest: require("./faker.test"),
 };
 
 function initialization() {
   console.log(`[Oauth] initializing tests`);
-  module.Login.default();
-  module.NodeImportExample.default();
+  modeleTests.Login.default();
+  modeleTests.FakerExampleTest.default();
 }
 
 module.exports = {

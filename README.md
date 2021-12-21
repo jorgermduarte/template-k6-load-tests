@@ -7,27 +7,22 @@ A example repository for k6 usage with webpack.
 - npm install
 
 ## __Commands Available__
-- npm run bundle ( used to build the project)
-- npm start ( will run __k6__)
+  
+    "bundle": "webpack",
+    "start": "k6 run __dist__/index.bundle.js",
+    "lint:check": "eslint --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ignore-path .gitignore .",
+    "prettier:check": "prettier --check \"src/**/*.js\" ",
+    "prettier:fix": "prettier --write \"src/**/*.js\" --fix",
+    "prepare": "husky install"
+  
 
-
-
-## __Dependencies__
-
-This projects requires the following dependencies:
-    
-    - Docker client
-    - K6 
-    - Visual Studio (Optionally)
-
-## __Content__ 
+## __Project Content__ 
  - Webpack
  - babel-loader
  - scripts to run and bundle the project
  - Html  and raw-data.json report in the __output__ folder.
-
-## __Things needed to be added__
  - Prettier
- - Linter
- - Docker support
+ - Eslint
+
 

@@ -5,7 +5,7 @@
   "main": "initialization.js",
   "scripts": {
     "bundle": "webpack",
-    "start": "k6 run __dist__/index.bundle.js",
+    "start": "k6 run __build__/index.bundle.js",
     "lint:check": "eslint --ignore-path .gitignore .",
     "lint:fix": "eslint --fix --ignore-path .gitignore .",
     "prettier:check": "prettier --check \"src/**/*.js\" ",

@@ -9,11 +9,11 @@ export default function () {
 
 export function handleSummary(data) {
   return {
-    "__output__/result.html": htmlReport(data),
+    "__reports__/result.html": htmlReport(data),
     stdout: textSummary(data, {
       indent: " ",
       enableColors: true,
     }),
-    "__output__/raw-data.json": JSON.stringify(data, null, 4),
+    "__reports__/raw-data.json": JSON.stringify(data, null, 4),
   };
 }
