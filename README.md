@@ -24,5 +24,6 @@ A example repository for k6 usage with webpack.
  - Html  and raw-data.json report in the __output__ folder.
  - Prettier
  - Eslint
+ - Husky Hooks
 
 
