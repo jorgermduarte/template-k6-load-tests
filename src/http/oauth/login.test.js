@@ -1,13 +1,8 @@
-import http from 'k6/http';
-import {
-    sleep
-} from 'k6';
-import {
-    hello_world
-} from '../../modules/hello.world.module'
+import http from "k6/http";
+import { sleep } from "k6";
 
 export default function () {
-    console.log("imported module output: ", hello_world())
-    http.get('https://test.k6.io')
-    sleep(1)
+  console.log("imported module output: ", hello_world());
+  http.get("https://test.k6.io");
+  sleep(1);
 }
