@@ -21,7 +21,7 @@
     "core-js": "^3.19.0",
     "eslint": "^8.5.0",
     "eslint-config-google": "^0.14.0",
-    "faker": "^5.5.3",
+    "faker": "^6.6.6",
     "k6": "^0.0.0",
     "webpack": "^5.60.0",
     "webpack-cli": "^4.9.1",
