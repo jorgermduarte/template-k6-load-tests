@@ -1,5 +1,5 @@
 node_modules
 package-lock.json
-__build__
-__reports__/raw-data.json
-__reports__/result.html
+build
+reports/raw-data.json
+reports/result.html

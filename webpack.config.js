@@ -1,17 +1,23 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'production',
-  entry: {
-    index: './src/start/initialization.js',
+  mode: 'development',
+  entry: './src/index.ts',
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    path: path.resolve(__dirname, '__build__'),
     libraryTarget: 'commonjs',
-    filename: '[name].bundle.js',
-  },
-  module: {
-    rules: [{ test: /\.js$/, use: 'babel-loader' }],
+    filename: 'build.bundle.js',
+    path: path.resolve(__dirname, 'build'),
   },
   target: 'web',
   externals: /k6(\/.*)?/,

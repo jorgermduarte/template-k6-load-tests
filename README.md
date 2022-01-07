@@ -1,29 +1,35 @@
 # K6 - Webpack
-A example repository for k6 usage with webpack.
+A example repository for k6 usage with webpack using typescript.
 
-## __Getting Started Commands__
+# Getting Started
 
+**Extension required:**
+> https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
+
+**Commands required**
 - brew install k6
 - npm install
 
-## __Commands Available__
-  
-    "bundle": "webpack",
-    "start": "k6 run __dist__/index.bundle.js",
-    "lint:check": "eslint --ignore-path .gitignore .",
-    "lint:fix": "eslint --fix --ignore-path .gitignore .",
-    "prettier:check": "prettier --check \"src/**/*.js\" ",
-    "prettier:fix": "prettier --write \"src/**/*.js\" --fix",
-    "prepare": "husky install"
+## Commands Available
+
+    "start": "k6 run build/build.bundle.js",
+    "webpack": "webpack",
+    "prepare": "npm run compile",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "fix": "gts fix",
+    "posttest": "npm run lint",
+    "compile": "tsc",
+    "pretest": "npm run compile"
   
 
 ## __Project Content__ 
  - Webpack
- - babel-loader
- - scripts to run and bundle the project
- - Html  and raw-data.json report in the __output__ folder.
+ - K6 integration
+ - K6 automatic reports
  - Prettier
  - Eslint
  - Husky Hooks
+ - Typescript
 
 
